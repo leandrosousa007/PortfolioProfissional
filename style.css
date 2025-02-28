@@ -780,13 +780,8 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Título */
-h1 {
-    text-align: center;
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 20px;
-}
+
+
 
 /* Painel */
 .painel {
