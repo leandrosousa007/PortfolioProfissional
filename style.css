@@ -213,6 +213,31 @@
     }
 }
 
+@media (max-width: 500px) {
+    .container1 {
+        flex-wrap: wrap;
+        /* Permite que o layout se ajuste em telas pequenas */
+    }
+
+    .text1 {
+        font-size: 115%;
+        /* Ajusta o tamanho do texto para telas menores */
+        margin-right: 0;
+        /* Remove a margem direita */
+        text-align: left;
+        /* Alinha o texto à esquerda */
+    }
+
+    .image1 {
+        width: 30vw;
+        /* Ajusta a imagem para 50% da largura da tela */
+        height: 30vw;
+        /* Ajusta a altura da imagem */
+        margin-top: 20px;
+        /* Adiciona espaço superior entre o texto e a imagem */
+    }
+}
+
 #contato{
 
     margin-bottom: 50px;
@@ -564,11 +589,11 @@ footer p {
 }
 
 /* Estilos para os ícones das redes sociais */
-.icones2 {
+.icones21 {
     margin-top: 20px;
 }
 
-.icones2 a {
+.icones21 a {
     color: white;
     font-size: 2em;
     margin: 0 15px;
@@ -590,7 +615,7 @@ footer p {
         margin: 5px 0;
     }
 
-    .icones2 a {
+    .icones21 a {
         font-size: 1.5em;
         margin: 0 10px;
     }
