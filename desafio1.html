@@ -1,83 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leandro Evaristo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+    <title>Desafio 1</title>
 
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            background-color: #000;
-            color: wheat;
-        }
+    <link type="text/css" rel="stylesheet" href="styledesafio.css" />
 
-        .text {
-            font-size: 24px;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 3px solid #000;
-            width: 0;
-            animation: typing 5s steps(28) 1s forwards, blink 0.75s step-end infinite;
-        }
-
-        .image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-image: url('./image/leandro.jpg'); /* Substitua pelo caminho correto da sua imagem */
-            
-            background-position: center;
-        }
-
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 100%;
-            }
-        }
-
-        @keyframes blink {
-            50% {
-                border-color: transparent;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="text" id="text"></div>
-        <div class="image"></div>
+    <div class="center-container">
+        <button id="showButton" onclick="mostrarFormulario()">Mostrar Consulta de CEP</button>
     </div>
 
-    <script>
-        const textElement = document.getElementById("text");
-        const text = "Olá, eu sou o Leandro Evaristo";
+    <div id="cep-section" class="white-background">
+        <h1>Consulta de CEP</h1>
+        CEP: <input type="text" id="cep-input" placeholder="Somente Números">
+        <button onclick="buscarCEP()">Consultar</button>
+        
+    
+        <h2>Informações do Endereço:</h2>
+        <table id="endereco-info">
+            <tr >
+                <td>Logradouro:</td>
+                <td id="logradouro"></td>
+            </tr>
+            <tr>
+                <td>Bairro:</td>
+                <td id="bairro"></td>
+            </tr>
+            <tr>
+                <td>Complemento:</td>
+                <td id="complemento"></td>
+            </tr>
+            <tr>
+                <td>Localidade:</td>
+                <td id="localidade"></td>
+            </tr>
+            <tr>
+                <td>UF:</td>
+                <td id="uf"></td>
+            </tr>
+        </table>
+        <button onclick="limparDados()">Limpar</button>
 
-        let index = 0;
-        function typeText() {
-            if (index < text.length) {
-                textElement.innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeText, 80);
-            }
-        }
+        <button id="backButton" onclick="voltar()">Voltar</button></div>
 
-        typeText();
-    </script>
+        <script src="script.js"></script>
 </body>
 </html>

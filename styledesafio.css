@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgb(202, 202, 202),rgb(88, 170, 11), rgb(1, 187, 1));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Estilo para o botão centralizado */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#showButton {
+    background-color: rgb(111, 228, 120);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+#cep-input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(100% - 22px);
+}
+
+button {
+    background-color: rgb(111, 228, 120);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(10, 199, 26);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.white-background {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* O conteúdo de consulta de CEP ficará oculto inicialmente */
+#cep-section {
+    display: none;
+    text-align: center;
+}
+
+
