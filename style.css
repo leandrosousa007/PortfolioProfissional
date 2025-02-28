@@ -17,7 +17,13 @@
     /* Cor do texto e dos links */
 
 }
+.icow{
+    margin-top: 12px;
+    width: 30px;
+    height: auto;
 
+
+}
 /*Cor para celular*/
 .side-nav {
     background-color: rgb(36, 63, 25) !important;
