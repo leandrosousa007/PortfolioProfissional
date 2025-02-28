@@ -189,7 +189,7 @@
     }
 
     .text1 {
-        font-size: 200%; /* Ajusta o tamanho do texto para telas menores */
+        font-size: 150%; /* Ajusta o tamanho do texto para telas menores */
         margin-right: 0; /* Remove a margem direita */
         text-align: left; /* Alinha o texto à esquerda */
     }
