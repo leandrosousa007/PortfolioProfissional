@@ -38,14 +38,16 @@
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Experiências & Projetos</a></li>
                         <li><a href="#contato">Contato</a></li>
-                        <li><a href="#interativa">Interativa</a></li>
+                        <li><a href="#interativa">Lista de Feitiços</a></li>
+                        <li><a href="desafio1.html">Desafio</a></li>
                     </ul>
                     <ul class="side-nav" id="menu-mobile">
                         <li><a href="#principal">Principal</a>
                         <li><a href="#habilidades">Habilidades</a></li>
                         <li><a href="#projetos">Experiências & Projetos</a></li>
                         <li><a href="#contato">Contato</a></li>
-                        <li><a href="#interativa">Interativa</a></li>
+                        <li><a href="#interativa">Lista de Feitiços</a></li>
+                        <li><a href="desafio1.html">Desafio</a></li>
                     </ul>
                 </div>
 
@@ -346,21 +348,65 @@
 
 
 
-        <div id="interativa">
-            <h1>Interativa</h1>
-
-
-
+        <div id="interativa" class="cen">
+            <h1>Lista de Feitiços</h1>
+            <p>Faça uma lista de feitiços, insira o nome do feitiço, o nível e adicione a lista.</p>
+            <div class="oi">
+                <div id="formulario" class="painel">
+                    <div class="painel-cab">
+                        <table class="tab" id="tab">
+                            <tr>
+                                <th>Meus Feitiços</th>
+                            </tr>
+                        </table>
+                    </div>
+        
+                    <div class="painel-bd">
+                        <div class="input-group">
+                            Feitiços: <input type="text" id="fet">
+                            Nível: <input type="text" id="nvl">
+                            <button class="b" onclick="req()">+</button>
+                        </div>
+                    </div>
+        
+                    <table class="table t" id="ta">
+                        <tr>
+                            <th>Feitiço</th>
+                            <th>Nível</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
+        
+        
 
 
         <footer class="cen fot">
-            Todos os direiros reservados à Leandro Evaristo.
-
-
-
-
+            <p>Todos os direitos reservados à Leandro Evaristo.</p>
+        
+            <ul class="footer-links">
+                <li><a href="#principal">Principal</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Experiências & Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#interativa">Lista de Feitiços</a></li>
+                <li><a href="desafio1.html">Desafio</a></li>
+            </ul>
+        
+            <div class="icones2">
+                <a href="https://www.linkedin.com/in/leandro-evaristo-902610272/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/leandrosousa007" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:leandroevaristo2006@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </footer>
+        
 
         <!-- JavaScript -->
         <script src="js.js"></script>
@@ -374,6 +420,8 @@
                 $(".button-collapse").sideNav();
             });
         </script>
+
+
 
 </body>
 

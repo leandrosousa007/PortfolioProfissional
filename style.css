@@ -110,18 +110,19 @@
     background-color: rgba(36, 63, 25, 0.822);
     color: rgb(255, 255, 255);
     padding: 10px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin: 0 auto;
 }
+
 .skills {
-    
-    
+
+
     color: #ffffff;
     line-height: 1.9;
     text-align: left;
     max-width: 800px;
     margin: 0 auto;
-    
+
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -141,7 +142,7 @@
 }
 
 .text1 {
-    font-size: 300%; 
+    font-size: 300%;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid #ffffff;
@@ -152,15 +153,15 @@
 }
 
 .image1 {
-    width: 50vw; 
+    width: 50vw;
     height: 50vh;
-    max-width: 500px; 
-    max-height: 500px; 
-    
+    max-width: 500px;
+    max-height: 500px;
+
     background-image: url('./image/lilb.png');
     background-size: cover;
     background-position: center;
-    margin-left: 20px; 
+    margin-left: 20px;
     animation: swing 2s ease-in-out infinite;
 }
 
@@ -168,15 +169,19 @@
     0% {
         transform: rotate(0deg);
     }
+
     25% {
         transform: rotate(10deg);
     }
+
     50% {
         transform: rotate(0deg);
     }
+
     75% {
         transform: rotate(-10deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -185,23 +190,34 @@
 /* Estilo para telas pequenas (como celulares) */
 @media (max-width: 1050px) {
     .container1 {
-        flex-wrap: wrap; /* Permite que o layout se ajuste em telas pequenas */
+        flex-wrap: wrap;
+        /* Permite que o layout se ajuste em telas pequenas */
     }
 
     .text1 {
-        font-size: 150%; /* Ajusta o tamanho do texto para telas menores */
-        margin-right: 0; /* Remove a margem direita */
-        text-align: left; /* Alinha o texto à esquerda */
+        font-size: 150%;
+        /* Ajusta o tamanho do texto para telas menores */
+        margin-right: 0;
+        /* Remove a margem direita */
+        text-align: left;
+        /* Alinha o texto à esquerda */
     }
 
     .image1 {
-        width: 30vw; /* Ajusta a imagem para 50% da largura da tela */
-        height: 30vw; /* Ajusta a altura da imagem */
-        margin-top: 20px; /* Adiciona espaço superior entre o texto e a imagem */
+        width: 30vw;
+        /* Ajusta a imagem para 50% da largura da tela */
+        height: 30vw;
+        /* Ajusta a altura da imagem */
+        margin-top: 20px;
+        /* Adiciona espaço superior entre o texto e a imagem */
     }
 }
 
+#contato{
 
+    margin-bottom: 50px;
+
+}
 
 
 
@@ -228,7 +244,7 @@ html {
     font-family: 'Oswald' !important;
     line-height: 1.1;
     -webkit-tap-highlight-color: transparent !important;
-    background: linear-gradient(rgb(31, 71, 31), rgb(255, 255, 255),rgb(31, 71, 31));
+    background: linear-gradient(rgb(31, 71, 31), rgb(255, 255, 255), rgb(36, 63, 25));
 }
 
 
@@ -389,7 +405,7 @@ h4 {
     margin-top: 4%;
     width: 80%;
     border-radius: 30px;
-    margin:0 auto;
+    margin: 0 auto;
 
 
 
@@ -449,25 +465,29 @@ h4 {
 .icones2 a {
     text-decoration: none;
     color: #0f0f0f;
-    font-size: 5rem; /* Tamanho inicial dos ícones */
+    font-size: 5rem;
+    /* Tamanho inicial dos ícones */
     transition: color 0.3s;
 }
 
 @media (max-width: 1024px) {
     .icones2 a {
-        font-size: 4rem; /* Reduz o tamanho para telas médias, como tablets */
+        font-size: 4rem;
+        /* Reduz o tamanho para telas médias, como tablets */
     }
 }
 
 @media (max-width: 768px) {
     .icones2 a {
-        font-size: 3rem; /* Reduz ainda mais o tamanho para telas pequenas */
+        font-size: 3rem;
+        /* Reduz ainda mais o tamanho para telas pequenas */
     }
 }
 
 @media (max-width: 480px) {
     .icones2 a {
-        font-size: 2rem; /* Tamanho mínimo para dispositivos móveis */
+        font-size: 2rem;
+        /* Tamanho mínimo para dispositivos móveis */
     }
 }
 
@@ -506,10 +526,76 @@ h4 {
     margin-top: 10px;
 }
 
-.fot {
-    background-color: #000000;
+/* Estilos Gerais do Footer */
+footer {
+    background-color: rgb(36, 63, 25);
     color: white;
+    padding: 20px;
+    text-align: center;
 }
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+    color: rgba(156, 156, 156, 0.692);
+}
+
+/* Estilos para os ícones das redes sociais */
+.icones2 {
+    margin-top: 20px;
+}
+
+.icones2 a {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.icones2 a:hover {
+    color: rgba(156, 156, 156, 0.692);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links li {
+        margin: 5px 0;
+    }
+
+    .icones2 a {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+}
+
 
 /*Fim Habilidades*/
 
@@ -615,11 +701,15 @@ h4 {
 }
 
 .projeto img {
-    width: 100%; /* Garante que a largura da imagem ocupe 100% do espaço disponível */
-    height: 100%; /* Faz a altura da imagem ocupar todo o espaço disponível */
-    object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorção */
+    width: 100%;
+    /* Garante que a largura da imagem ocupe 100% do espaço disponível */
+    height: 100%;
+    /* Faz a altura da imagem ocupar todo o espaço disponível */
+    object-fit: cover;
+    /* Garante que a imagem ocupe todo o espaço sem distorção */
     border-radius: 20px;
-    display: block; /* Remove o espaço abaixo da imagem */
+    display: block;
+    /* Remove o espaço abaixo da imagem */
 }
 
 .projeto-content {
@@ -669,5 +759,126 @@ h4 {
         position: static;
         margin: -40px auto 20px;
         transform: none;
+    }
+}
+
+
+
+
+
+/* Geral */
+body {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Principal */
+#interativa {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Painel */
+.painel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho do Painel */
+.painel-cab {
+    margin-bottom: 20px;
+}
+
+/* Tabela de Feitiços */
+.tab, .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 10px;
+    background-color: rgb(36, 63, 25);
+    color: white;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Inputs e Botão lado a lado */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input[type="text"] {
+    padding: 8px;
+    width: 30%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.input-group button.b {
+    padding: 10px 15px;
+    background-color: rgb(36, 63, 25);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.input-group button.b:hover {
+    background-color: rgba(36, 63, 25, 0.932);
+}
+
+/* Estilo para a tabela de feitiços inseridos */
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #interativa {
+        padding: 10px;
+    }
+
+    .painel {
+        padding: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group input[type="text"] {
+        width: 100%;
+    }
+
+    .input-group button.b {
+        width: 100%;
+        margin-top: 10px;
     }
 }

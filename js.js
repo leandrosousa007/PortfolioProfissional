@@ -11,3 +11,26 @@ const textElement = document.getElementById("text");
         }
 
         typeText();
+
+
+        function req() {
+      
+            var fet = document.getElementById('fet');
+            var nvl = document.getElementById('nvl');
+            var ta = document.getElementById('ta');
+      
+            var feiticoValor = fet.value;
+            var nivelValor = nvl.value;
+      
+            if (feiticoValor !== '' && nivelValor !== '') {
+              var add = ta.insertRow();
+              var col = add.insertCell();
+              var col1 = add.insertCell();
+      
+              col.innerHTML = feiticoValor;
+              col1.innerHTML = nivelValor;
+      
+              fet.value = '';
+              nvl.value = '';
+            }
+          }
