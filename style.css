@@ -1,0 +1,433 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap);
+
+/* Estilo geral do menu */
+
+/*Cor do Menu */
+.nav-wrapper {
+    background-color: rgb(36, 63, 25) !important;
+    /* Cor de fundo do menu */
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.brand-logo,
+.nav-wrapper a {
+    color: #ffffff !important;
+    /* Cor do texto e dos links */
+
+}
+
+/*Cor para celular*/
+.side-nav {
+    background-color: rgb(36, 63, 25) !important;
+    /* Cor de fundo do menu lateral */
+}
+
+.side-nav li a {
+    color: #f8f8f8 !important;
+    /* Cor dos links */
+}
+
+
+
+.nav-bar {
+    background: rgb(36, 63, 25);
+    /* Fundo escuro */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-color: transparent;
+}
+
+/* Links do menu */
+.navbar-nav {
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    padding: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #000000;
+}
+
+
+/* Estilo para tornar responsivo */
+@media (max-width: 991px) {
+    .navbar-nav {
+        background: #222;
+        padding: 20px 0;
+    }
+
+    .navbar-nav .nav-item {
+        display: block;
+        padding: 10px 15px;
+    }
+}
+
+.fol {
+    width: 100%;
+    /* Ocupa 100% da largura da tela */
+    height: 400px;
+    /* Ocupa 100% da altura da tela */
+    object-fit: cover;
+    /* Garante que a imagem cubra toda a tela sem distorcer */
+    display: block;
+}
+
+.carrosel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+
+}
+
+/*Fim Menu*/
+
+html {
+    font-family: 'Oswald' !important;
+    line-height: 1.1;
+    -webkit-tap-highlight-color: transparent !important;
+    background-color: rgb(247, 247, 247);
+}
+
+
+
+p {
+    font-family: sans-serif !important;
+    font-weight: 450;
+    margin-bottom: .5rem;
+    line-height: 1.60;
+}
+
+/*Todos paragrafos padrão*/
+
+strong {
+    font-weight: bold !important;
+
+}
+
+/*negrito*/
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: .5rem;
+    font-weight: 450;
+    line-height: 1.2;
+}
+
+/*padronização*/
+
+
+/*Inicio Introdução*/
+.cont1 {
+    display: flex;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+/*Introdução*/
+
+.cont2,
+.cont3 {
+    width: 48%;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+/*INT1 E INT2*/
+
+.cont2 {
+    padding: 20px;
+    background-color: rgb(243, 243, 243);
+    border: 3px solid rgb(36, 63, 25);
+}
+
+/*INT2*/
+
+/*Linha do Tempo*/
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid rgb(36, 63, 25);/
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(36, 63, 25);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px white;
+}
+
+.timeline-content {
+    margin-left: 40px;
+}
+
+.timeline-content h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/*Fim da Linha do Tempo*/
+
+.cont3 {
+    background-color: rgb(36, 63, 25);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*INT2*/
+
+
+
+.cont3 img.lil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+
+}
+
+/*int2*/
+
+@media (max-width: 768px) {
+
+    .cont2,
+    .cont3 {
+        width: 100%;
+    }
+
+    .cont1 {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+}
+
+.cen {
+    text-align: center;
+
+
+}
+
+/*Fim Introdução responsivo*/
+
+
+/*Inicio de Habilidades*/
+#habilidades {
+    background-color: rgb(36, 63, 25);
+    color: rgb(255, 255, 255);
+    padding: 0 0 10px 10px;
+    margin-top: 4%;
+
+
+}
+
+.cont4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.icoz {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+
+
+}
+
+.icone {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(24% - 10px);
+    /* Isso faz com que, na maioria das telas, caibam até 4 itens por linha */
+    flex: 1 1 calc(24% - 10px);
+    /* Isso mantém os itens responsivos */
+    margin-bottom: 20px;
+    max-width: 200px;
+    /* Limita a largura máxima dos itens */
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.icone:hover {
+    transform: scale(1.10);
+}
+
+.icones2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.icones2 a {
+    text-decoration: none;
+    color: #272727;
+    font-size: 6rem;
+    transition: color 0.3s;
+}
+
+.icones2 a:hover {
+    color: rgb(39, 82, 22);
+}
+
+
+.java {
+    color: #f89820;
+}
+
+.javascript {
+    color: #f7df1e;
+}
+
+.cpp {
+    color: #00599c;
+}
+
+.sql {
+    color: #4479a1;
+}
+
+.html {
+    color: #f18900;
+}
+
+.css {
+    color: #2141f5;
+}
+
+.nivel {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.fot {
+    background-color: #000000;
+    color: white;
+}
+
+/*Fim Habilidades*/
+
+
+@media only screen and(min-width: 768px) {
+
+    /*pc*/
+    .cols-1 {
+        width: 30%;
+    }
+
+    .cols-2 {
+        width: 50%;
+    }
+
+    .cols-3 {
+        width: 100%;
+    }
+
+    .cols-4 {
+        width: 15%;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /*tablet*/
+    .col-1 {
+        width: 30%;
+    }
+
+    .col-2 {
+        width: 50%;
+    }
+
+    .col-3 {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 15%;
+    }
+}
+
+/*Celular*/
+[class*="col-"] {
+    width: 100%;
+}
