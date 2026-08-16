@@ -1,434 +1,201 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Profissional - Leandro Evaristo</title>
-
-    <!-- Style CSS -->
-    <link type="text/css" rel="stylesheet" href="style.css" />
-
-    <link type="text/css" rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
-
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="imagex/png" href="./image/leandro.jpg">
-
-    <!-- Link da Fonte -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#173c2b">
+    <meta name="description" content="Portfólio de Leandro Evaristo, estudante de Ciência da Computação e desenvolvedor de software.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Leandro Evaristo — Desenvolvedor de Software">
+    <meta property="og:description" content="Tecnologia com clareza e propósito. Conheça projetos, competências e a jornada de Leandro Evaristo.">
+    <meta property="og:image" content="./image/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Leandro Evaristo — Desenvolvedor de Software">
+    <meta name="twitter:description" content="Tecnologia com clareza e propósito.">
+    <meta name="twitter:image" content="./image/og.png">
+    <title>Leandro Evaristo — Desenvolvedor de Software</title>
+    <link rel="icon" type="image/png" href="./image/leandro.jpg">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-    <div>
-        <header>
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Leandro Evaristo</a>
-                    <a href="#" data-activates="menu-mobile" class="button-collapse">
-                        <img src="./image/icow.png" class="icow">
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="#principal">Principal</a>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Experiências & Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <li><a href="#interativa">Lista de Feitiços</a></li>
-                        <li><a href="desafio1.html">Desafio</a></li>
+    <header class="site-header" id="topo">
+        <nav class="nav-shell" aria-label="Navegação principal">
+            <a class="brand" href="#topo" aria-label="Leandro Evaristo, início">
+                <span class="brand-mark" aria-hidden="true">LE</span>
+                <span>Leandro Evaristo</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+                <span></span><span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#jornada">Jornada</a>
+                <a class="nav-cta" href="#contato">Vamos conversar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="ambient ambient-one" aria-hidden="true"></div>
+            <div class="ambient ambient-two" aria-hidden="true"></div>
+            <div class="shell hero-grid">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow"><span class="status-dot"></span> Disponível para novos projetos</p>
+                    <h1 id="hero-title">Tecnologia com<br><span>clareza e propósito.</span></h1>
+                    <p class="hero-lead">Sou Leandro, estudante de Ciência da Computação e desenvolvedor de software. Transformo ideias em experiências digitais simples, funcionais e bem construídas.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projetos">Conheça meu trabalho <span aria-hidden="true">↓</span></a>
+                        <a class="button button-secondary" href="mailto:leandroevaristo2006@gmail.com">Entrar em contato</a>
+                    </div>
+                    <ul class="hero-facts" aria-label="Resumo profissional">
+                        <li><strong>UFU</strong><span>Ciência da Computação</span></li>
+                        <li><strong>Full stack</strong><span>Web e aplicações</span></li>
+                        <li><strong>Uberlândia</strong><span>Minas Gerais</span></li>
                     </ul>
-                    <ul class="side-nav" id="menu-mobile">
-                        <li><a href="#principal">Principal</a>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Experiências & Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                        <li><a href="#interativa">Lista de Feitiços</a></li>
-                        <li><a href="desafio1.html">Desafio</a></li>
-                    </ul>
                 </div>
-
-            </nav>
-        </header>
-        <div class="container1">
-            <div class="text1" id="text"></div>
-            <div class="image1"></div>
-        </div>
-
-    </div>
-
-
-
-
-
-    <div class="cont1" id="principal">
-        <div class="cont2">
-            <h1>Introdução</h1><br><br><br>
-
-
-            <h4>Formação Acadêmica</h4>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5>2022 - 2024</h5>
-                        <p>Ensino Médio e Curso Técnico em <strong>Desenvolvimento de Sistemas</strong> no Instituto
-                            Federal do Triângulo Mineiro - <strong>IFTM</strong></p>
-                    </div>
+                <div class="portrait-wrap reveal" aria-label="Foto de Leandro Evaristo">
+                    <div class="portrait-glow" aria-hidden="true"></div>
+                    <div class="portrait-card"><img src="./image/lilb.png" alt="Leandro Evaristo" fetchpriority="high"></div>
+                    <div class="floating-note note-code" aria-hidden="true"><span>&lt;/&gt;</span> Desenvolvimento</div>
+                    <div class="floating-note note-study" aria-hidden="true"><span>✦</span> Aprendizado contínuo</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h5>2025 - Atual</h5>
-                        <p>Cursando <strong>Ciência da Computação</strong> na Universidade Federal de Uberlândia -
-                            <strong>UFU</strong>
-                        </p>
+            </div>
+        </section>
+
+        <section class="section" id="sobre" aria-labelledby="sobre-title">
+            <div class="shell about-grid">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Sobre mim</p>
+                    <h2 id="sobre-title">Curiosidade que vira solução.</h2>
+                </div>
+                <div class="about-copy reveal">
+                    <p class="large-copy">Minha jornada começou no curso técnico em Desenvolvimento de Sistemas do IFTM e continua hoje na graduação em Ciência da Computação pela UFU.</p>
+                    <p>Gosto de entender como as coisas funcionam, experimentar novas tecnologias e transformar desafios em soluções úteis. Tenho interesse especial por banco de dados, desenvolvimento web e programação — sempre buscando unir boa engenharia a uma experiência agradável para quem usa.</p>
+                    <div class="values-grid">
+                        <article><span class="value-number">01</span><h3>Colaboração</h3><p>Comunicação aberta e trabalho em equipe para construir resultados melhores.</p></article>
+                        <article><span class="value-number">02</span><h3>Proatividade</h3><p>Antecipar necessidades, aprender rápido e agir com responsabilidade.</p></article>
+                        <article><span class="value-number">03</span><h3>Novas ideias</h3><p>Explorar caminhos criativos sem perder de vista a simplicidade.</p></article>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <h4>Matérias favoritas e áreas de interesse</h4>
-            <p>Tenho grande interesse por <strong> Banco de Dados, Web Design e Programação</strong>.</p>
-
-        </div>
-
-
-        <div class="cont3">
-
-
-
-
-
-
-            <h4>Sobre Mim</h4>
-            <p> Olá, meu nome é <strong>Leandro Evaristo de Sousa</strong>, tenho 18 anos e sou apaixonado por
-                tecnologia desde cedo. Sempre tive curiosidade por computadores e sistemas, o que me levou a explorar e
-                aprender constantemente sobre novas tecnologias. Atualmente, curso <strong>Ciência da
-                    Computação</strong> no 1º semestre na Universidade Federal de Uberlândia.
-                Gosto de testar coisas novas, entender como funcionam e buscar soluções criativas para desafios. Minha
-                jornada na área começou com o <strong>Curso Técnico em Desenvolvimento de Sistemas</strong>, onde tive a
-                oportunidade de aprofundar meus conhecimentos em programação, banco de dados e web design. Agora, na
-                graduação, estou expandindo ainda mais meu conhecimento e explorando novas áreas da computação.
-
-                Sou curioso e motivado pelo aprendizado contínuo. Acredito que a tecnologia está em constante evolução e
-                sempre há algo novo para descobrir. Meu objetivo é aprimorar minhas habilidades e contribuir para o
-                desenvolvimento de soluções inovadoras.
-
-            </p>
-
-            <h4>Curiosidades</h4>
-            <p class="">
-                Sou muito curioso e adoro descobrir coisas novas. A tecnologia sempre me fascinou, mas minha curiosidade
-                vai além disso: gosto de aprender sobre diversos assuntos e explorar novas possibilidades. Sempre que
-                encontro algo interessante, busco entender como funciona e o que posso aprender com aquilo. Essa sede de
-                conhecimento me motiva a testar, experimentar e, principalmente, evoluir a cada nova descoberta.
-            </p>
-
-        </div>
-
-
-
-    </div>
-
-
-
-
-    <div id="habilidades">
-        <h1 class="cen">Habilidades</h1>
-
-        <h4 class="cen">Linguagens de Programação</h4>
-
-        <div class="cont4">
-
-            <div class="icone">
-                <i class="fab fa-java icon java"></i>
-                <div>Java</div>
-                <div class="nivel">Intermediário</div>
-            </div>
-            <div class="icone">
-                <i class="fab fa-js icon javascript"></i>
-                <div>JavaScript</div>
-                <div class="nivel">Intermediário</div>
-            </div>
-            <div class="icone">
-                <i class="fas fa-code icon cpp"></i>
-                <div>C++</div>
-                <div class="nivel">Básico</div>
-            </div>
-
-        </div>
-        <div class="cont4">
-
-            <div class="icone">
-                <i class="fas fa-database icon sql"></i>
-                <div>SQL</div>
-                <div class="nivel">Avançado</div>
-            </div>
-
-            <div class="icone">
-                <i class="fab fa-html5 icon html"></i>
-                <div>HTML</div>
-                <div class="nivel">Avançado</div>
-            </div>
-
-            <div class="icone">
-                <i class="fab fa-css3-alt icon css"></i>
-                <div>CSS</div>
-                <div class="nivel">Intermediário</div>
-            </div>
-
-
-
-        </div>
-
-        <h4 class="cen">Ferramentas de Desenvolvimento</h4>
-        <div class="cont4">
-
-            <div class="icone">
-                <i><img src="./image/vscode.png" alt="vscode" class="icoz"></i>
-                <div>Visual Studio Code</div>
-            </div>
-
-
-            <div class="icone">
-                <img src="./image/netbeans.png" alt="netbeans" class="icoz">
-                <div>NetBeans</div>
-            </div>
-
-
-            <div class="icone">
-                <img src="./image/mysql.png" alt="mysql" class="icoz">
-                <div>MySQL</div>
-            </div>
-
-            <div class="icone">
-                <img src="./image/vb.png" alt="VirtualBox" class="icoz">
-                <div>VirtualBox</div>
-            </div>
-
-        </div>
-
-
-        <h4 class="cen">Tecnologias</h4>
-
-        <div class="cont4">
-            <div class="icone">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Native"
-                    class="icoz">
-                <div>React Native</div>
-            </div>
-
-            <div class="icone">
-                <img src="./image/spring.png" alt="Spring Boot" class="icoz">
-                <div>Spring Boot</div>
-            </div>
-
-            <div class="icone">
-                <img src="./image/aws.png" alt="AWS" class="icoz">
-                <div>AWS</div>
-            </div>
-
-            <div class="icone">
-                <img src="./image/ajax.png" alt="AJAX" class="icoz">
-                <div>AJAX</div>
-            </div>
-        </div>
-
-        <h1 class="cen">Habilidades Interpessoais</h1>
-
-
-        <p class="skills">
-            <span class="skill-item">• Trabalho em equipe: Tenho forte habilidade em trabalho em equipe, sempre buscando
-                colaborar de forma coletiva para obter o melhor desempenho.</span><br>
-            <span class="skill-item">• Proatividade: Sou proativo, sempre procurando antecipar necessidades e agir antes
-                que se tornem problemas.</span><br>
-            <span class="skill-item">• Ideias novas: Busco constantemente trazer ideias novas e criativas para melhorar
-                processos e alcançar melhores resultados.</span><br>
-            <span class="skill-item">• Comunicação: Acredito que a comunicação aberta e a disposição para ouvir são
-                fundamentais para o sucesso em qualquer equipe.</span>
-        </p>
-
-
-
-    </div>
-
-
-    <div id="projetos">
-        <h1 class="cen">Projetos & Experiências</h1>
-
-        <div class="projetos-container">
-            <!-- Projeto 1 -->
-
-            <div class="projeto">
-                <a href="https://leandrosousa007.github.io/gymRat/" target="_blank">
-                    <img src="./image/gym.png" alt="Imagem do Projeto 1">
-                </a>
-                <div class="projeto-content">
-                    <h3>GymRat</h3>
-                    <p>Site sobre redes de academias para ratos.</p>
-                    <p><strong>Tecnologias Utilizadas: </strong></p>
-                    <p>Html, CSS, JavaScript</p>
-                    <a href="https://leandrosousa007.github.io/gymRat/" target="_blank">Acessar site</a>
+        <section class="section skills-section" id="habilidades" aria-labelledby="habilidades-title">
+            <div class="shell">
+                <div class="section-heading centered reveal">
+                    <p class="eyebrow eyebrow-light">Competências</p>
+                    <h2 id="habilidades-title">Ferramentas para tirar ideias do papel.</h2>
+                    <p>Uma base técnica versátil, da interface ao banco de dados.</p>
                 </div>
-            </div>
-
-            <div class="projeto">
-                <a href="https://viveirobrasilcerrado.com.br/" target="_blank">
-                    <img src="./image/viveiro.png" alt="Imagem do Projeto 2">
-                </a>
-                <div class="projeto-content">
-                    <h3>Viveiro Brasil Cerrado</h3>
-                    <p>Site desenvolvido para uma empresa de viveiro em Araguari, sobre o viveiro.</p>
-                    <p><strong>Tecnologias Utilizadas: </strong></p>
-                    <p>Html, CSS, JavaScript</p>
-                    <a href="https://viveirobrasilcerrado.com.br/" target="_blank">Acessar Site</a>
-                </div>
-            </div>
-
-            <div class="projeto">
-                <a href="https://rapratas.com.br/" target="_blank">
-                    <img src="./image/pratas.png" alt="Imagem do Projeto 3">
-                </a>
-                <div class="projeto-content">
-                    <h3>RA Pratas</h3>
-                    <p>Site desenvolvido para a venda de joias.</p>
-                    <p><strong>Tecnologias Utilizadas: </strong></p>
-                    <p>Html, CSS, JavaScript</p>
-                    <a href="https://rapratas.com.br/" target="_blank">Acessar site</a>
-                </div>
-            </div>
-
-            <div class="projeto">
-                <a href="./image/TartaMat.apk" target="_blank">
-                    <img src="./image/tarta.jpg" alt="Imagem do Projeto 4">
-                </a>
-                <div class="projeto-content">
-                    <h3>Aplicativo TartaMat</h3>
-                    <p>Aplicativo feito para auxiliar estudantes com dificuldades em matemática básica.</p>
-                    <p><strong>Tecnologias Utilizadas: </strong></p>
-                    <p>React Native</p>
-                    <a href="./image/TartaMat.apk" download="TartaMat.apk" class="botao">Baixar Aplicativo</a>
-                </div>
-            </div>
-
-            <div class="projeto">
-                <a href="https://github.com/leandrosousa007/projetoIntegrador/tree/main/SocietyEducationFinal" target="_blank">
-                    <img src="./image/se.png" alt="Imagem do Projeto 5">
-                </a>
-                <div class="projeto-content">
-                    <h3>Society Education</h3>
-                    <p>Projeto sobre ocorrências disciplinares dos alunos, com controle de alunos, ocorrências e escolas
-                        realizados por meio de banco de dados.</p>
-                    <p><strong>Tecnologias Utilizadas: </strong></p>
-                    <p>Html, CSS, JavaScript, Java, SQL, SpringBoot</p>
-                    <a href="https://github.com/leandrosousa007/projetoIntegrador/tree/main/SocietyEducationFinal" target="_blank">Acessar site</a>
-                </div>
-            </div>
-
-
-
-        </div>
-
-
-        <div id="contato">
-            <div class=" cont5">
-                <h1 class="cen">Contato</h1>
-                <p class="cen">Entre em contato comigo por aqui</p>
-                <div class="icones2">
-                    <a href="https://www.linkedin.com/in/leandro-evaristo-902610272/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/leandrosousa007" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:leandroevaristo2006@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div id="interativa" class="cen">
-            <h1>Lista de Feitiços</h1>
-            <p>Faça uma lista de feitiços, insira o nome do feitiço, o nível e adicione a lista.</p>
-            <div class="oi">
-                <div id="formulario" class="painel">
-                    <div class="painel-cab">
-                        <table class="tab" id="tab">
-                            <tr>
-                                <th>Meus Feitiços</th>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="painel-bd">
-                        <div class="input-group">
-                            Feitiços: <input type="text" id="fet">
-                            Nível: <input type="text" id="nvl">
-                            <button class="b" onclick="req()">+</button>
+                <div class="skill-bento">
+                    <article class="skill-panel skill-panel-main reveal">
+                        <div><p class="panel-kicker">Desenvolvimento</p><h3>Linguagens</h3></div>
+                        <div class="skill-list">
+                            <span>Java <small>Intermediário</small></span>
+                            <span>JavaScript <small>Intermediário</small></span>
+                            <span>SQL <small>Avançado</small></span>
+                            <span>HTML <small>Avançado</small></span>
+                            <span>CSS <small>Intermediário</small></span>
+                            <span>C++ <small>Básico</small></span>
                         </div>
-                    </div>
-
-                    <table class="table t" id="ta">
-                        <tr>
-                            <th>Feitiço</th>
-                            <th>Nível</th>
-                        </tr>
-                    </table>
+                    </article>
+                    <article class="skill-panel reveal">
+                        <p class="panel-kicker">Frameworks & cloud</p><h3>Tecnologias</h3>
+                        <div class="tech-cloud" aria-label="React Native, Spring Boot, AWS e AJAX"><span>React Native</span><span>Spring Boot</span><span>AWS</span><span>AJAX</span></div>
+                    </article>
+                    <article class="skill-panel skill-panel-tools reveal">
+                        <p class="panel-kicker">Ambiente de trabalho</p><h3>Ferramentas</h3>
+                        <div class="tool-row">
+                            <div><img src="./image/vscode.png" alt="" loading="lazy"><span>VS Code</span></div>
+                            <div><img src="./image/netbeans.png" alt="" loading="lazy"><span>NetBeans</span></div>
+                            <div><img src="./image/mysql.png" alt="" loading="lazy"><span>MySQL</span></div>
+                            <div><img src="./image/vb.png" alt="" loading="lazy"><span>VirtualBox</span></div>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-
-
-        <footer class="cen fot">
-            <p>Todos os direitos reservados à Leandro Evaristo.</p>
-
-            <ul class="footer-links">
-                <li><a href="#principal">Principal</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Experiências & Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#interativa">Lista de Feitiços</a></li>
-                <li><a href="desafio1.html">Desafio</a></li>
-            </ul>
-
-            <div class="icones21">
-                <a href="https://www.linkedin.com/in/leandro-evaristo-902610272/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/leandrosousa007" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:leandroevaristo2006@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        <section class="section projects-section" id="projetos" aria-labelledby="projetos-title">
+            <div class="shell">
+                <div class="section-heading projects-heading reveal">
+                    <div><p class="eyebrow">Projetos selecionados</p><h2 id="projetos-title">Trabalhos que mostram minha evolução.</h2></div>
+                    <p>Projetos acadêmicos e experiências reais que combinam desenvolvimento, produto e aprendizado.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card project-featured reveal">
+                        <a class="project-media" href="https://viveirobrasilcerrado.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Viveiro Brasil Cerrado em nova aba"><img src="./image/viveiro.png" alt="Tela do site Viveiro Brasil Cerrado" loading="lazy"></a>
+                        <div class="project-body"><div class="project-meta"><span>Website profissional</span><span>2024</span></div><h3>Viveiro Brasil Cerrado</h3><p>Presença digital desenvolvida para um viveiro de Araguari, apresentando a empresa e seus serviços de forma acessível.</p><div class="project-footer"><span>HTML · CSS · JavaScript</span><a href="https://viveirobrasilcerrado.com.br/" target="_blank" rel="noopener noreferrer">Ver projeto <span aria-hidden="true">↗</span></a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <a class="project-media" href="https://rapratas.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir RA Pratas em nova aba"><img src="./image/pratas.png" alt="Tela do site RA Pratas" loading="lazy"></a>
+                        <div class="project-body"><div class="project-meta"><span>E-commerce</span></div><h3>RA Pratas</h3><p>Experiência digital para apresentação e venda de joias.</p><div class="project-footer"><span>HTML · CSS · JavaScript</span><a href="https://rapratas.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Ver RA Pratas">↗</a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <a class="project-media" href="https://leandrosousa007.github.io/gymRat/" target="_blank" rel="noopener noreferrer" aria-label="Abrir GymRat em nova aba"><img src="./image/gym.png" alt="Tela do projeto GymRat" loading="lazy"></a>
+                        <div class="project-body"><div class="project-meta"><span>Projeto web</span></div><h3>GymRat</h3><p>Conceito divertido de uma rede de academias para ratos.</p><div class="project-footer"><span>HTML · CSS · JavaScript</span><a href="https://leandrosousa007.github.io/gymRat/" target="_blank" rel="noopener noreferrer" aria-label="Ver GymRat">↗</a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <a class="project-media" href="https://github.com/leandrosousa007/projetoIntegrador/tree/main/SocietyEducationFinal" target="_blank" rel="noopener noreferrer" aria-label="Abrir Society Education no GitHub em nova aba"><img src="./image/se.png" alt="Tela do projeto Society Education" loading="lazy"></a>
+                        <div class="project-body"><div class="project-meta"><span>Sistema acadêmico</span></div><h3>Society Education</h3><p>Gestão de alunos, escolas e ocorrências disciplinares com integração a banco de dados.</p><div class="project-footer"><span>Java · Spring Boot · SQL</span><a href="https://github.com/leandrosousa007/projetoIntegrador/tree/main/SocietyEducationFinal" target="_blank" rel="noopener noreferrer" aria-label="Ver Society Education">↗</a></div></div>
+                    </article>
+                    <article class="project-card reveal">
+                        <a class="project-media" href="./image/TartaMat.apk" download="TartaMat.apk" aria-label="Baixar aplicativo TartaMat"><img src="./image/tarta.jpg" alt="Identidade visual do aplicativo TartaMat" loading="lazy"></a>
+                        <div class="project-body"><div class="project-meta"><span>Aplicativo mobile</span></div><h3>TartaMat</h3><p>Aplicativo para apoiar estudantes com dificuldades em matemática básica.</p><div class="project-footer"><span>React Native</span><a href="./image/TartaMat.apk" download="TartaMat.apk" aria-label="Baixar TartaMat">↓</a></div></div>
+                    </article>
+                </div>
             </div>
-        </footer>
+        </section>
 
+        <section class="section journey-section" id="jornada" aria-labelledby="jornada-title">
+            <div class="shell journey-grid">
+                <div class="section-heading reveal"><p class="eyebrow">Minha jornada</p><h2 id="jornada-title">Aprender, construir, evoluir.</h2><p>Cada etapa amplia minha visão sobre tecnologia e sobre as pessoas que ela pode ajudar.</p></div>
+                <ol class="timeline" aria-label="Formação acadêmica">
+                    <li class="reveal"><span class="timeline-year">2022 — 2024</span><h3>Técnico em Desenvolvimento de Sistemas</h3><p>Instituto Federal do Triângulo Mineiro — IFTM</p></li>
+                    <li class="reveal"><span class="timeline-year">2025 — atual</span><h3>Bacharelado em Ciência da Computação</h3><p>Universidade Federal de Uberlândia — UFU</p></li>
+                </ol>
+            </div>
+        </section>
 
-        <!-- JavaScript -->
-        <script src="js.js"></script>
+        <section class="section lab-section" id="laboratorio" aria-labelledby="lab-title">
+            <div class="shell lab-card reveal">
+                <div class="lab-intro"><p class="eyebrow eyebrow-light">Laboratório</p><h2 id="lab-title">Um pequeno experimento interativo.</h2><p>Adicione feitiços e níveis à lista. Um exercício simples de manipulação da interface com JavaScript.</p></div>
+                <form class="spell-form" id="spell-form">
+                    <div class="field"><label for="fet">Feitiço</label><input type="text" id="fet" name="feitico" placeholder="Ex.: Lumos" autocomplete="off" required></div>
+                    <div class="field"><label for="nvl">Nível</label><input type="text" id="nvl" name="nivel" placeholder="Ex.: 1" autocomplete="off" required></div>
+                    <button class="button lab-button" type="submit">Adicionar <span aria-hidden="true">＋</span></button>
+                </form>
+                <div class="spell-list-wrap"><table class="spell-table"><thead><tr><th>Feitiço</th><th>Nível</th><th><span class="sr-only">Ações</span></th></tr></thead><tbody id="spell-list"><tr class="empty-state"><td colspan="3">Sua lista está vazia.</td></tr></tbody></table></div>
+            </div>
+        </section>
 
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <section class="section contact-section" id="contato" aria-labelledby="contato-title">
+            <div class="shell contact-card reveal">
+                <p class="eyebrow">Vamos criar algo juntos?</p><h2 id="contato-title">Uma boa ideia começa<br>com uma conversa.</h2>
+                <p>Estou aberto a oportunidades, colaborações e projetos que me desafiem a aprender e construir.</p>
+                <a class="button button-primary" href="mailto:leandroevaristo2006@gmail.com">Enviar uma mensagem <span aria-hidden="true">↗</span></a>
+                <div class="social-links" aria-label="Redes sociais">
+                    <a href="https://www.linkedin.com/in/leandro-evaristo-902610272/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+                    <a href="https://github.com/leandrosousa007" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+                    <a href="desafio1.html"><span>Desafio CEP</span><span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
-        <script>
-            $(function () {
-                $(".button-collapse").sideNav();
-            });
-        </script>
-
-
-
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <a class="brand" href="#topo"><span class="brand-mark" aria-hidden="true">LE</span><span>Leandro Evaristo</span></a>
+            <p>Desenvolvido com curiosidade e propósito. <span id="current-year"></span></p>
+            <a href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+    <script type="module" src="js.js"></script>
 </body>
-
 </html>

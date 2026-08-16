@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "portfolio-leandro-evaristo",
+  "compatibility_date": "2026-08-16",
+  "main": "./worker/index.js",
+  "assets": {
+    "not_found_handling": "404-page"
+  }
+}
