@@ -1,4 +1,5 @@
 node_modules/
 dist/
-.wrangler/
-*.tgz
+.expo/
+web-build/
+public/downloads/*.apk

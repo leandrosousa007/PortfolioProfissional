@@ -1,4 +1,8 @@
-import { copyFile, mkdir } from "node:fs/promises";
+const { copyFile, mkdir } = require("node:fs/promises");
 
-await mkdir("dist/client/image", { recursive: true });
-await copyFile("image/TartaMat.apk", "dist/client/image/TartaMat.apk");
+async function copyDownloads() {
+  await mkdir("public/downloads", { recursive: true });
+  await copyFile("app/assets/downloads/TartaMat.apk", "public/downloads/TartaMat.apk");
+}
+
+copyDownloads();

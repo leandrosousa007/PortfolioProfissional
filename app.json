@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Leandro Evaristo — Portfólio",
+    "slug": "portfolio-leandro-evaristo",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./app/assets/images/leandro-portrait.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F4F7F4"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./app/assets/images/favicon.png",
+      "name": "Leandro Evaristo — Desenvolvedor de Sistemas",
+      "shortName": "Leandro"
+    }
+  }
+}
