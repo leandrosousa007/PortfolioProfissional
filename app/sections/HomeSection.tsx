@@ -33,7 +33,7 @@ export function HomeSection({ horizontalPadding, isDesktop, isMobile, onNavigate
           <Text accessibilityRole="header" style={[styles.title, isMobile && styles.mobileTitle]}>Bem-vindo ao meu portfólio</Text>
           <Text style={styles.name}>Eu sou Leandro Evaristo de Sousa.</Text>
           <Text style={styles.description}>
-            Estou no 5º semestre de Ciência da Computação na UFU e busco uma oportunidade de estágio em tecnologia. Minha trajetória reúne desenvolvimento web, monitoria, extensão, empresa júnior e trabalhos freelance.
+            Estou no 5º semestre de Ciência da Computação na UFU e faço iniciação científica em Inteligência Artificial e Processamento de Linguagem Natural. Desenvolvo aplicações web, mobile e desktop e busco estágio em Desenvolvimento de Software e Full Stack.
           </Text>
 
           <View style={styles.actions}>

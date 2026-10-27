@@ -17,7 +17,7 @@ export const education: TimelineEntry[] = [
     period: "dez/2024 - jun/2028",
     role: "5º semestre",
     description:
-      "Na graduação, amplio minha base em desenvolvimento de software, programação orientada a objetos e banco de dados. A formação também se conecta às minhas atividades de monitoria, extensão e empresa júnior.",
+      "Na graduação, estudo desenvolvimento de software, programação orientada a objetos e banco de dados. Atualmente, realizo iniciação científica em Inteligência Artificial e Processamento de Linguagem Natural, após experiências em monitoria, extensão e empresa júnior.",
     focusAreas: [
       "Desenvolvimento de Software",
       "Programação Orientada a Objetos",
@@ -44,60 +44,66 @@ export const education: TimelineEntry[] = [
 
 export const experiences: TimelineEntry[] = [
   {
+    id: "iniciacao-cientifica",
+    type: "experience",
+    title: "Iniciação Científica em Inteligência Artificial e PLN",
+    organization: "Universidade Federal de Uberlândia",
+    period: "set/2026 - presente",
+    role: "Pesquisador de iniciação científica",
+    description:
+      "Pesquiso Reconhecimento de Entidades Nomeadas (NER) em textos informais de redes sociais. Desenvolvo o YouTubeNER para coletar comentários e preparar um dataset próprio; a anotação das entidades, o treinamento e a avaliação dos modelos compõem as próximas etapas da pesquisa.",
+    focusAreas: ["Inteligência Artificial", "Processamento de Linguagem Natural", "NER", "Preparação de Dados", "Python", "APIs REST"],
+  },
+  {
     id: "ascii",
     type: "experience",
     title: "ASCII Empresa Júnior",
     organization: "Universidade Federal de Uberlândia",
-    role: "Assessor do Administrativo e Financeiro",
+    period: "abr/2025 - ago/2026",
+    role: "Desenvolvedor Full Stack e Assessor Administrativo-Financeiro",
     description:
-      "Atuo em projetos web com foco em landing pages e design responsivo. Também apoio a diretoria em rotinas financeiras e administrativas da empresa júnior.",
-    focusAreas: ["Landing Pages", "Design Responsivo", "Gestão Administrativa", "Finanças", "Trabalho em Equipe"],
+      "Atuei em projetos reais de software com React, JavaScript, Node.js e SQL. Participei de fluxos de versionamento e revisão de código com Git/GitHub e do trabalho em equipe com Scrum, além de apoiar as rotinas administrativas e financeiras da empresa júnior.",
+    focusAreas: ["Desenvolvimento Full Stack", "React", "Node.js", "SQL", "Git e GitHub", "Scrum", "Gestão Administrativa e Financeira"],
   },
   {
     id: "monitoria-poo",
     type: "experience",
     title: "Programação Orientada a Objetos",
     organization: "Universidade Federal de Uberlândia",
+    period: "nov/2025 - mar/2026",
     role: "Monitor",
     description:
       "Auxiliei estudantes em dúvidas teóricas e práticas, corrigi atividades de laboratório e apoiei diretamente a professora da disciplina.",
     focusAreas: ["POO", "Java", "Apoio Didático", "Atividades de Laboratório"],
   },
   {
-    id: "museu-extensao",
-    type: "experience",
-    title: "Projeto de Extensão Museu da Computação",
-    organization: "FACOM - UFU",
-    role: "Extensionista",
-    description:
-      "Fui responsável pela manutenção técnica e atualização do site do museu, além de conduzir workshops e apresentações para divulgação científica e tecnológica.",
-    focusAreas: ["Manutenção Web", "Workshops", "Apresentações", "Divulgação Científica"],
-  },
-  {
     id: "museu-monitor",
     type: "experience",
     title: "Museu da Computação",
     organization: "FACOM - UFU",
-    role: "Monitor",
+    period: "jul/2025 - mar/2026",
+    role: "Desenvolvedor Full Stack e Monitor",
     description:
-      "Orientei estudantes responsáveis pelo site, apoiando a implementação de funcionalidades e a identificação de erros no código.",
-    focusAreas: ["Mentoria", "Depuração", "Implementação Web", "Colaboração"],
+      "Desenvolvi e mantive o site da extensão universitária com interfaces em Angular e integrações via API em Python com Nginx. Coordenei voluntários, distribuí tarefas e apoiei a equipe na resolução de bugs e implementação de funcionalidades.",
+    focusAreas: ["Angular", "Python", "APIs REST", "Nginx", "Coordenação de Equipe", "Depuração", "Extensão Universitária"],
   },
   {
     id: "atletica",
     type: "experience",
-    title: "Atlética Computação UFU",
+    title: "AAACE - Atlética Computação e Exatas",
     organization: "Universidade Federal de Uberlândia",
-    role: "Diretor de Marketing",
+    period: "ago/2025 - 2026",
+    role: "Diretor Financeiro",
     description:
-      "Gerenciei redes sociais e comunicação visual, criando artes, editando vídeos e planejando a divulgação de eventos e competições.",
-    focusAreas: ["Marketing", "Redes Sociais", "Design", "Edição de Vídeo", "Eventos"],
+      "Gerenciei o fluxo de caixa, controlei receitas e despesas e participei do planejamento orçamentário de eventos. Elaborei relatórios financeiros para prestação de contas.",
+    focusAreas: ["Fluxo de Caixa", "Controle Financeiro", "Planejamento Orçamentário", "Prestação de Contas", "Eventos"],
   },
   
 ];
 
 export const certifications = [
-  "Inglês básico",
+  "Inglês técnico para leitura",
+  "Espanhol básico",
   "Programação em C++ - níveis iniciante e intermediário",
   "Fundamentos de SQL e manipulação de dados",
   "DevFest Triângulo 2023 e 2025",
@@ -111,6 +117,8 @@ export const technologyGroups: TechnologyGroup[] = [
     technologies: [
       { name: "Java", icon: "language-java", color: "#E76F00" },
       { name: "JavaScript", icon: "language-javascript", color: "#C9A900" },
+      { name: "TypeScript", icon: "language-typescript", color: "#3178C6" },
+      { name: "Python", icon: "language-python", color: "#3776AB" },
       { name: "C", icon: "language-c", color: "#5C6BC0" },
       { name: "C++", icon: "language-cpp", color: "#00599C" },
       { name: "SQL", icon: "database-search", color: "#2F6F9F" },
@@ -122,23 +130,65 @@ export const technologyGroups: TechnologyGroup[] = [
     title: "Frontend e mobile",
     technologies: [
       { name: "Angular", icon: "angular", color: "#DD0031" },
+      { name: "React", icon: "react", color: "#149ECA" },
       { name: "React Native", icon: "react", color: "#149ECA" },
+      { name: "Electron", icon: "electron-framework", color: "#47848F" },
     ],
   },
   {
     title: "Backend",
-    technologies: [{ name: "Spring Boot", icon: "leaf", color: "#6DB33F" }],
+    technologies: [
+      { name: "Spring Boot", icon: "leaf", color: "#6DB33F" },
+      { name: "Node.js", icon: "nodejs", color: "#43853D" },
+      { name: "FastAPI", icon: "api", color: "#009688" },
+    ],
   },
   {
     title: "Banco de dados",
     technologies: [
       { name: "PostgreSQL", icon: "elephant", color: "#336791" },
       { name: "MySQL", icon: "dolphin", color: "#00758F" },
+      { name: "SQLite", icon: "database-outline", color: "#0F80CC" },
+      { name: "Firebase", icon: "firebase", color: "#D88200" },
     ],
   },
 ];
 
 export const projects: Project[] = [
+  {
+    slug: "fisio-me",
+    name: "Fisio.me",
+    category: "Aplicativo de reabilitação e performance",
+    description: "Aplicativo mobile que conecta atletas, fisioterapeutas e profissionais de educação física em jornadas de reabilitação e acompanhamento.",
+    details: "Desenvolvido com React Native e Expo, o Fisio.me reúne avaliação inicial, mapa corporal de dor, protocolos de exercícios, evolução e áreas de atleta e profissional. Autenticação por e-mail e Google e sincronização privada das contas usam Firebase Authentication e Cloud Firestore. Agenda, chat, pacientes e protocolos iniciais utilizam dados de demonstração; essas telas apresentam a proposta de acompanhamento do aplicativo. O projeto também conta com site de apresentação em Next.js e builds Android pelo EAS.",
+    stack: ["React Native", "Expo", "Firebase", "Cloud Firestore", "React Navigation", "Next.js"],
+    competencies: ["Desenvolvimento mobile", "Autenticação e Google Sign-In", "Persistência por usuário", "Regras de acesso no Firestore", "Navegação e estado", "Tema claro e escuro", "Build Android com EAS"],
+    image: require("../assets/images/projects/fisio-me.png"),
+    repositoryUrl: "https://github.com/leandrosousa007/fisio-me",
+  },
+  {
+    slug: "clinica-odontologica",
+    name: "Clínica Odontológica",
+    category: "Sistema desktop e site institucional",
+    description: "Sistema Windows para organizar agenda, pacientes, prontuários e financeiro de clínicas odontológicas, acompanhado por um site de apresentação.",
+    details: "Aplicativo desktop desenvolvido com Electron, React e TypeScript, com banco SQLite local. Reúne agenda por profissional, cadastro de pacientes, anamnese, odontograma, histórico clínico, contas a receber, convênios e relatórios exportáveis em PDF, CSV e XLSX. Possui backups automáticos, cópia secundária criptografada e restauração. O site institucional em Astro apresenta capturas do aplicativo com dados fictícios; a versão desktop ainda depende de homologação antes do uso com dados reais de pacientes.",
+    stack: ["Electron", "React", "TypeScript", "SQLite", "Tailwind CSS", "Astro"],
+    competencies: ["Aplicações desktop", "Modelagem de dados", "Gestão de agenda e prontuário", "Validação de formulários", "Exportação de relatórios", "Backup e restauração", "Site institucional responsivo"],
+    image: require("../assets/images/projects/clinica-odontologica.png"),
+    liveUrl: "https://clinica-odontologica-site-five.vercel.app/",
+    repositoryUrl: "https://github.com/leandrosousa007/clinica-odontologica-site",
+  },
+  {
+    slug: "youtube-ner",
+    name: "YouTubeNER",
+    category: "Iniciação científica · IA e PLN",
+    description: "Ferramenta de coleta e exportação de comentários do YouTube para preparar um dataset de pesquisa em Reconhecimento de Entidades Nomeadas.",
+    details: "Aplicação desenvolvida durante minha iniciação científica na UFU. O front-end em React e TypeScript envia o ID do vídeo a uma API em Python com FastAPI, que percorre as páginas da YouTube Data API v3 e retorna comentários principais, autor, curtidas e data. A interface pagina os resultados e exporta os dados em CSV. A ferramenta está na etapa de coleta e preparação do dataset; anotação de entidades, treinamento e avaliação dos modelos de NER são etapas futuras.",
+    stack: ["React", "TypeScript", "Python", "FastAPI", "YouTube Data API v3", "CSV"],
+    competencies: ["Integração com APIs", "Coleta e preparação de dados", "Paginação", "Exportação CSV", "Tratamento de erros", "Desenvolvimento Full Stack", "Pesquisa em PLN e NER"],
+    cover: { icon: "youtube", colors: ["#993E43", "#351E2A"] },
+    repositoryUrl: "https://github.com/leandrosousa007/YoutubeNER",
+  },
   {
     slug: "viveiro-brasil-cerrado",
     name: "Viveiro Brasil Cerrado",
@@ -181,6 +231,7 @@ export const projects: Project[] = [
     stack: ["React Native"],
     competencies: ["Desenvolvimento mobile", "Componentização", "Navegação em aplicativo", "Interface educacional", "Design responsivo"],
     image: require("../assets/images/projects/tartamat.jpg"),
+    repositoryUrl: "https://github.com/leandrosousa007/app-tartamat",
     download: true,
   },
   {
